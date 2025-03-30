@@ -1,0 +1,78 @@
+site_name: Rust to C# Handbook
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.instant
+    - content.code.copy
+    - header.autohide
+    - palette.toggle
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: deep purple
+      accent: light blue
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: deep purple
+      accent: light blue
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.emoji
+
+nav:
+  - 🏠 Home: index.md
+
+  - 🧱 Language & Syntax:
+      - Language Fundamentals: language-fundamentals.md
+      - Control Flow: control-flow.md
+      - Pattern Matching: pattern-matching.md
+      - Functions & Generics: functions-generics.md
+
+  - 🧩 Types & Traits:
+      - Structs & Enums: structs-enums.md
+      - Traits & Interfaces: traits-interfaces.md
+
+  - ⚙️ Memory & Runtime:
+      - Memory & Ownership: memory-ownership.md
+      - Error Handling: error-handling.md
+      - Serialization & Deserialization: serialization.md
+      - Collections & Iterators: collections-iterators.md
+
+  - 🚀 Async & Concurrency: async-concurrency.md
+
+  - 🧭 Modules & Namespaces: modules-namespaces.md
+
+  - 🔧 Tooling:
+      - Tooling Comparison: tooling-comparison.md
+      - Dependency Management: dependency-management.md
+      - Build & Deployment: build-deployment.md
+
+  - 🔢 Binary File Parsing:
+      - Reading Binary Data: reading-binary-data.md
+      - Writing Binary Data: writing-binary-data.md
+
+  - 🧪 Testing & Advanced:
+      - Testing: testing.md
+      - Benchmarks & Performance: benchmarks.md
+      - Advanced Topics: advanced-topics.md
+      - Macros vs Source Generators: macros-vs-generators.md
+      - FFI & Interop: ffi-interop.md
+
+  - 📘 Resources:
+      - Glossary / Quick Reference: glossary.md
+      - From C# to Rust: reverse-mapping.md
+      - Real Project Examples: real-examples.md

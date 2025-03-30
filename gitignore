@@ -1,0 +1,22 @@
+# MkDocs build
+/site/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
