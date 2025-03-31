@@ -24,7 +24,7 @@ writer.write_u32::<LittleEndian>(42)?;
 writer.write_f32::<LittleEndian>(3.14)?;
 ```
 
-### 💻 'C#'
+### 💻 C#  
 
 ```csharp
 writer.Write((uint)42);
@@ -39,7 +39,7 @@ writer.Write(3.14f);
 |------------------------------|-------------------------------|
 | Uses `byteorder` crate       | Must reverse bytes manually   |
 
-### 💡 'C#' BigEndian Example
+### 💡 C# BigEndian Example
 
 ```csharp
 byte[] bytes = BitConverter.GetBytes(42);
@@ -63,7 +63,7 @@ writer.write_all("Hello".as_bytes())?;
 writer.write_u8(0)?;
 ```
 
-### 💻 'C#' (null-terminated)
+### 💻 C# (null-terminated)
 
 ```csharp
 writer.Write(Encoding.UTF8.GetBytes("Hello"));
@@ -81,7 +81,7 @@ let data = [1u8, 2, 3, 4];
 writer.write_all(&data)?;
 ```
 
-### 💻 'C#'
+### 💻 C#  
 
 ```csharp
 byte[] data = { 1, 2, 3, 4 };
@@ -109,7 +109,7 @@ impl Header {
 }
 ```
 
-### C#
+### C#  
 
 ```csharp
 struct Header {
@@ -136,7 +136,7 @@ file.write_all(b"DATA")?;
 file.write_u8(0)?;
 ```
 
-### C#
+### C#  
 
 ```csharp
 using var fs = new FileStream("data.bin", FileMode.Create);

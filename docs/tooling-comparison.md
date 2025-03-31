@@ -19,7 +19,7 @@ cargo build --release
 cargo test --all
 ```
 
-### C#
+### C# .NET CLI
 ```sh
 dotnet build -c Release
 dotnet test

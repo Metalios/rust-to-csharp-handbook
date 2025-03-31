@@ -21,7 +21,7 @@ fn read_header(path: &str) -> std::io::Result<[u8; 4]> {
 }
 ```
 
-### C#
+### C#  
 
 ```csharp
 using var reader = new BinaryReader(File.OpenRead("file.bin"));
@@ -59,7 +59,7 @@ fn main() {
 }
 ```
 
-### C#
+### C#  
 
 ```csharp
 Console.WriteLine($"Hello, {args.ElementAtOrDefault(0) ?? "World"}");
@@ -75,7 +75,7 @@ Console.WriteLine($"Hello, {args.ElementAtOrDefault(0) ?? "World"}");
 let config: Config = serde_json::from_str(&fs::read_to_string("config.json")?)?;
 ```
 
-### C#
+### C#  
 
 ```csharp
 var config = JsonSerializer.Deserialize<Config>(File.ReadAllText("config.json"));
@@ -93,7 +93,7 @@ tokio::spawn(async {
 });
 ```
 
-### C#
+### C#  
 
 ```csharp
 Task.Run(() => Console.WriteLine("Running in background..."));

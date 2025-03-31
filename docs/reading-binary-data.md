@@ -24,7 +24,7 @@ let val = reader.read_u32::<LittleEndian>()?;
 let val = reader.read_i16::<LittleEndian>()?;
 ```
 
-### 🧠 'C#'
+### 🧠 C#  
 ```csharp
 uint val = reader.ReadUInt32();
 short val = reader.ReadInt16();
@@ -39,7 +39,7 @@ short val = reader.ReadInt16();
 | `LittleEndian`, `BigEndian` from `byteorder` | No built-in: use `BinaryPrimitives`, `BitConverter` |
 | Specify endianness per read              | Must swap bytes manually                      |
 
-### 📦 'C#' Manual Example (BigEndian)
+### 📦 C# Manual Example (BigEndian)
 ```csharp
 byte[] bytes = reader.ReadBytes(4);
 int val = BitConverter.ToInt32(bytes.Reverse().ToArray());
@@ -57,7 +57,7 @@ reader.read_until(0, &mut buf)?;
 let s = String::from_utf8_lossy(&buf[..buf.len()-1]).to_string();
 ```
 
-### 🧠 'C#'
+### 🧠 C#  
 ```csharp
 // Null-terminated string
 List<byte> bytes = new();
@@ -77,7 +77,7 @@ let mut arr = [0u8; 16];
 reader.read_exact(&mut arr)?;
 ```
 
-### 🧠 'C#'
+### 🧠 C#  
 ```csharp
 byte[] arr = reader.ReadBytes(16);
 ```
@@ -90,7 +90,7 @@ let x = reader.read_u32::<LittleEndian>()?;
 let y = reader.read_f32::<LittleEndian>()?;
 ```
 
-### C#
+### C#  
 ```csharp
 uint x = reader.ReadUInt32();
 float y = reader.ReadSingle();
@@ -145,7 +145,7 @@ let magic = reader.read_u32::<LittleEndian>()?;
 let version = reader.read_u16::<LittleEndian>()?;
 ```
 
-### C#
+### C#  
 ```csharp
 uint magic = reader.ReadUInt32();
 ushort version = reader.ReadUInt16();

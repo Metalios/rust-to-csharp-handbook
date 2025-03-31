@@ -18,7 +18,7 @@ match value {
 }
 ```
 
-### C#
+### C#  
 
 ```csharp
 int value = 3;
@@ -59,7 +59,7 @@ match msg {
 }
 ```
 
-### C# 9+
+### C#  
 
 ```csharp
 public record Message;
@@ -94,7 +94,7 @@ if let Some(x) = number {
 }
 ```
 
-### C#
+### C#  
 
 ```csharp
 int? number = 7;
@@ -106,7 +106,7 @@ if (number is int x) {
 
 ---
 
-## 🧠 `when` Clauses in C#
+## 🧠 `when` Clauses in C#  
 
 ```csharp
 switch (value)

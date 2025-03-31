@@ -20,7 +20,7 @@ The handbook is organized into grouped sections for fast navigation:
 Understand variables, types, control flow, and pattern matching.
 
 ### 🧩 Types & Traits
-Map Rust `struct`s and `trait`s to C# `class`es and `interface`s, including generics and inheritance.
+Map Rust structs and traits to C# classes and interfaces, including generics and inheritance.
 
 ### ⚙️ Memory & Runtime
 Ownership, error handling, nullability, collections, and working with serialized data.

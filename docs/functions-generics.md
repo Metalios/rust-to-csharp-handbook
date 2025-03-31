@@ -54,7 +54,7 @@ fn print_debug<T: std::fmt::Debug>(x: T) {
 }
 ```
 
-### C#
+### C#  
 
 ```csharp
 void Print<T>(T x) where T : IFormattable {
